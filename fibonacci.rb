@@ -7,19 +7,18 @@ if fibonacci_length.nil?
 elsif fibonacci_length.to_i == 1
   puts 0
 elsif fibonacci_length.to_i > 1
-	n = 1
-	fibonacci = [0, n]
+  n = 1
+  fibonacci = [0, n]
 
-	while fibonacci.length < fibonacci_length.to_i
-	  fibonacci[n+1] = fibonacci[n] + fibonacci[n-1]
-	  n += 1
-	end
+  while fibonacci.length < fibonacci_length.to_i
+    fibonacci[n+1] = fibonacci[n] + fibonacci[n-1]
+    n += 1
+  end
 
-	puts fibonacci.join(", ")
+  puts fibonacci.join(", ")
   
 else
   puts "Wrong argument: please enter positive value"
-
 end
 
 
